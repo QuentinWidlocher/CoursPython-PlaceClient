@@ -79,8 +79,8 @@ class Game:
                 math.floor(pos[1] / CELL_SIZE))
 
         # On trace le pixel à l'écran et on indique ça au serveur
-        self.inform_server(x, y, color)
         self.draw_pixel(x, y, color)
+        self.inform_server(x, y, color)
 
     def draw_pixel(self, x, y, color):
         # Chaque cellule est composé de CELL_SIZE carré de pixel.
